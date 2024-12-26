@@ -1,0 +1,951 @@
+---
+title: "Projet TUTORE"
+author: "Hady COULIBALY"
+date: "2024-04-01"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+#install.packages("magrittr")
+#install.packages("knitr")
+#install.packages("reshape2")
+#install.packages("sf")
+#installed.packages("rnaturalearth")
+#install.packages("tidyr")
+#install.packages("dplyr")
+#install.packages("reshape2")
+#install.packages("emmeans", dependencies = TRUE)
+#install.packages("FactoMineR", dependencies = TRUE)
+```
+
+```{r}
+library(sf) # Pour manipuler les données spatiales
+library(rnaturalearth) # Pour les données géographiques
+library(tidyr)
+library(knitr)
+library(ggplot2)
+library(dplyr)
+library(magrittr)
+library(reshape2)
+```
+
+
+#############################################################
+#############################################################
+####### Importation des jeu de données SIGI et IDH #########
+#############################################################
+#############################################################
+
+
+```{r}
+data23 <- read.csv("C:/Users/Hady COULIBALY/Desktop/AMU/PROJET TUTORE/Nouveau dossier/SIGI-2023.csv", sep=";", header = TRUE)
+```
+
+
+```{r}
+data19 <- read.csv("C:/Users/Hady COULIBALY/Desktop/AMU/PROJET TUTORE/Nouveau dossier/SIGI-2019.csv", sep=";", header = TRUE)
+```
+
+```{r}
+IDH21 <- read.table("C:/Users/Hady COULIBALY/Desktop/AMU/PROJET TUTORE/Nouveau dossier/HDI-2021.csv", sep=";", header = TRUE, dec = ",")
+
+```
+
+```{r}
+View(data19)
+```
+
+
+
+# Je veux savoir le nombre de pays existant dans mes bases
+```{r}
+(nombre = length(unique(data19$ID_Pays)))
+(nombre = length(unique(data23$ID_Pays)))
+(nombre = length(unique(IDH21$ID_Pays)))
+```
+
+
+
+
+#############################################################
+#############################################################
+#######     Prétraitement des données    #########
+#############################################################
+#############################################################
+
+
+
+# On remplace les valeurs manquante .. par NA
+```{r}
+IDH21$Human.Development.Index[IDH21$Human.Development.Index == ".."] = NA
+IDH21$Life.expectancy.at.birth[IDH21$Life.expectancy.at.birth == ".."] = NA
+IDH21$Expected.years.of.schooling[IDH21$Expected.years.of.schooling == ".."] = NA
+IDH21$Mean.years.of.schooling[IDH21$Mean.years.of.schooling == ".."] = NA
+IDH21$HDI.rank..2020.[IDH21$HDI.rank..2020. == ".."] = NA
+IDH21$HDI.rank..2021.[IDH21$HDI.rank..2021. == ".."] = NA
+```
+
+
+# Remplacer les virgules par des points dans les colonnes concernées
+```{r}
+IDH21$Human.Development.Index <- gsub(",", ".", IDH21$Human.Development.Index)
+IDH21$Life.expectancy.at.birth <- gsub(",", ".", IDH21$Life.expectancy.at.birth)
+IDH21$Expected.years.of.schooling <- gsub(",", ".", IDH21$Expected.years.of.schooling)
+IDH21$Mean.years.of.schooling <- gsub(",", ".", IDH21$Mean.years.of.schooling)
+```
+
+
+# On supprime les observations de donnée IDH contenant les valeurs manquantes
+```{r}
+IDH21 = na.omit(IDH21)
+(nombre = length(unique(IDH21$ID_Pays)))
+```
+
+
+
+# On converti les variables
+```{r}
+IDH21$Human.Development.Index = as.numeric(IDH21$Human.Development.Index)
+IDH21$Life.expectancy.at.birth = as.numeric(IDH21$Life.expectancy.at.birth)
+IDH21$Expected.years.of.schooling = as.numeric(IDH21$Expected.years.of.schooling)
+IDH21$Mean.years.of.schooling = as.numeric(IDH21$Mean.years.of.schooling)
+IDH21$HDI.rank..2020. = as.integer(IDH21$HDI.rank..2020.)
+```
+
+```{r}
+str(data23)
+str(data19)
+str(IDH21)
+```
+
+
+
+
+
+#############################################################
+#############################################################
+#######               Analyse de Sigi              #########
+#############################################################
+#############################################################
+
+
+
+
+# Visualisation des données 
+
+### Moyenne des sigi par région
+### 2019
+```{r}
+# Calculer les moyennes SIGI par région 2019
+mean_data <- data19 %>%
+  group_by(Region) %>%
+  summarize(mean_Valeur = mean(Valeur))
+
+# Calculer les pourcentages par région
+pourcentages <- data19 %>%
+  group_by(Region) %>%
+  summarize(pourcentage = mean(Valeur) / sum(mean_data$mean_Valeur) * 100)
+
+# Tracer le graphique avec les barres et les pourcentages
+ggplot() +
+  geom_bar(data = mean_data, aes(x = reorder(Region, mean_Valeur, FUN = mean), y = mean_Valeur, fill = Region), 
+           stat = "identity", position = "dodge") +
+  geom_text(data = pourcentages, aes(x = Region, y = mean_data$mean_Valeur, label = paste(round(mean_data$mean_Valeur), "%")), 
+            position = position_dodge(width = 0.9), vjust = -0.5) +
+  labs(title = "Moyenne SIGI par région en 2019", x= "Région", y = "Moyenne SIGI") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))+
+  ylim(0, 100)  # Ajuster l'échelle de l'axe y de 0 à 100
+```
+
+### 2023
+```{r}
+# Calculer les moyennes SIGI par région 2023
+mean_data <- data23 %>%
+  group_by(Region) %>%
+  summarize(mean_Valeur = mean(Valeur))
+
+# Calculer les pourcentages par région
+pourcentages <- data23 %>%
+  group_by(Region) %>%
+  summarize(pourcentage = mean(Valeur) / sum(mean_data$mean_Valeur) * 100)
+
+# Tracer le graphique avec les barres et les pourcentages
+ggplot() +
+  geom_bar(data = mean_data, aes(x = reorder(Region, mean_Valeur, FUN = mean), y = mean_Valeur, fill = Region), 
+           stat = "identity", position = "dodge") +
+  geom_text(data = pourcentages, aes(x = Region, y = mean_data$mean_Valeur, label = paste(round(pourcentage), "%")), 
+            position = position_dodge(width = 0.9), vjust = -0.5) +
+  labs(title = "Moyenne SIGI région en 2023", x = "Région", y = "Moyenne SIGI") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylim(0, 100)  # Ajuster l'échelle de l'axe y de 0 à 100
+```
+
+
+
+
+# Fusionner les 2 base sigi 2019 et 2023
+```{r}
+data_merge = merge(data19, data23, by = c("ID_Pays", "Region", "Pays","Var_Sigi"), all.x = FALSE)
+head(data_merge)
+```
+
+```{r}
+(nombre = length(unique(data_merge$Pays)))
+```
+
+
+# Je conserve uniquement la modalité Sigi de ma base fusioner
+```{r}
+merge1 <- data_merge[data_merge$Var_Sigi == "SIGI", ]
+head(merge1)
+```
+
+
+
+
+# Analyse des tendances temporelles :
+## Comparez les valeurs des variables SIGI entre 2019 et 2023 pour voir s'il y a eu des changements significatifs dans les rapports de genre au fil du temps.
+```{r}
+# Sélectionner les observations pour les années 2019 et 2023
+sigi_2019 <- merge1 %>% filter(Année.x == 2019)
+sigi_2023 <- merge1 %>% filter(Année.y == 2023)
+
+# Calculer les moyennes des valeurs SIGI pour chaque année
+moyenne_2019 <- sigi_2019 %>% 
+  group_by(Var_Sigi) %>% 
+  summarize(moyenne_2019 = mean(Valeur.x))
+
+moyenne_2023 <- sigi_2023 %>% 
+  group_by(Var_Sigi) %>% 
+  summarize(moyenne_2023 = mean(Valeur.y))
+
+# Fusionner les moyennes calculées pour les deux années
+moyennes <- left_join(moyenne_2019, moyenne_2023, by = "Var_Sigi")
+
+# Calculer la différence entre les moyennes des deux années
+moyennes <- moyennes %>% 
+  mutate(changement = moyenne_2023 - moyenne_2019)
+
+# Afficher les résultats
+print(moyennes)
+```
+
+
+
+
+
+
+
+
+
+
+# Identifiez les pays ou les régions avec les niveaux les plus élevés et les plus bas de SIGI en 2019 et 2023
+
+## 2019
+```{r}
+# Sélectionner les données pertinentes
+donnees_discrimination_famille19 <- data19 %>%
+  filter(Var_Sigi == "SIGI")
+
+# Calculer la moyenne de la valeur de la discrimination dans la famille par pays et par région
+moyennes_par_pays19 <- donnees_discrimination_famille19 %>%
+  group_by(Pays) %>%
+  summarize(moyenne_discrimination = mean(Valeur))
+
+moyennes_par_region19 <- donnees_discrimination_famille19 %>%
+  group_by(Region) %>%
+  summarize(moyenne_discrimination = mean(Valeur))
+
+# Identifier les pays avec les niveaux les plus élevés et les plus bas de discrimination de genre
+pays_plus_discriminants19 <- moyennes_par_pays19 %>%
+  top_n(5, moyenne_discrimination)  # Sélectionne les 5 pays avec les valeurs moyennes les plus élevées
+
+pays_moins_discriminants19 <- moyennes_par_pays19 %>%
+  top_n(-5, moyenne_discrimination)  # Sélectionne les 5 pays avec les valeurs moyennes les plus basses
+
+# Créer un data frame pour les régions les plus discriminantes
+regions_plus_discriminantes19 <- moyennes_par_region19 %>%
+  top_n(1, moyenne_discrimination)  # Sélectionne la région avec la valeur moyenne la plus élevée
+
+# Créer un data frame pour les régions les moins discriminantes
+regions_moins_discriminantes19 <- moyennes_par_region19 %>%
+  top_n(-1, moyenne_discrimination)  # Sélectionne la région avec la valeur moyenne la plus basse
+
+# Combiner les deux data frames
+graph_data_region19 <- rbind(
+  data.frame(Niveau = "Plus élevé", Region = regions_plus_discriminantes19$Region, Valeur = regions_plus_discriminantes19$moyenne_discrimination),
+  data.frame(Niveau = "Plus bas", Region = regions_moins_discriminantes19$Region, Valeur = regions_moins_discriminantes19$moyenne_discrimination)
+)
+
+```
+
+
+```{r}
+# Créer un graphique pour les pays avec les niveaux les plus élevés de discrimination de genre
+ggplot(pays_plus_discriminants19, aes(x = reorder(Pays, moyenne_discrimination), y = moyenne_discrimination)) +
+  geom_bar(stat = "identity", fill = "maroon") +
+  geom_text(aes(label = sprintf("%.1f%%", moyenne_discrimination)), 
+            vjust = -0.5, color = "black", size = 3) +
+  labs(title = "Pays avec les niveaux les plus élevés de discrimination de genre en 2019",
+       x = "Pays",
+       y = "Moyenne de la discrimination dans la famille") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+```{r}
+# Créer un graphique pour les pays avec les niveaux les plus bas de discrimination de genre
+ggplot(pays_moins_discriminants19, aes(x = reorder(Pays, -moyenne_discrimination), y = moyenne_discrimination)) +
+  geom_bar(stat = "identity", fill = "forestgreen") +
+  geom_text(aes(label = sprintf("%.1f%%", moyenne_discrimination)), 
+            vjust = -0.5, color = "black", size = 3) +
+  labs(title = "Les pays avec les niveaux les plus bas de discrimination de genre en 2019",
+       x = "Pays",
+       y = "Moyenne de la discrimination dans la famille") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+```
+
+# Niveaux de discrimination de genre par région en 2019
+```{r}
+region_data <- data19 %>%
+  filter(Var_Sigi == "SIGI") %>%
+  group_by(Region) %>%
+  summarize(moyenne_discrimination = mean(Valeur, na.rm = TRUE))
+
+# Créer le diagramme de camembert
+ggplot(region_data, aes(x = "", y = moyenne_discrimination, fill = Region)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start = 0) +
+  labs(title = "Niveaux de discrimination de genre par région en 2019",
+       fill = "Région") +
+  theme_void() +
+  geom_text(aes(label = paste0(round(moyenne_discrimination, 1), "%")), 
+            position = position_stack(vjust = 0.5)) +
+  scale_fill_brewer(palette = "Set2")
+
+```
+
+
+### 2023
+```{r}
+library(dplyr)
+
+# Sélectionner les données pertinentes
+donnees_discrimination_famille23 <- data23 %>%
+  filter(Var_Sigi == "SIGI")
+
+# Calculer la moyenne de la valeur de la discrimination dans la famille par pays et par région
+moyennes_par_pays23 <- donnees_discrimination_famille23 %>%
+  group_by(Pays) %>%
+  summarize(moyenne_discrimination = mean(Valeur))
+
+moyennes_par_region23 <- donnees_discrimination_famille23 %>%
+  group_by(Region) %>%
+  summarize(moyenne_discrimination = mean(Valeur))
+
+# Identifier les pays avec les niveaux les plus élevés et les plus bas de discrimination de genre
+pays_plus_discriminants23 <- moyennes_par_pays23 %>%
+  top_n(5, moyenne_discrimination)  # Sélectionne les 5 pays avec les valeurs moyennes les plus élevées
+
+pays_moins_discriminants23 <- moyennes_par_pays23 %>%
+  top_n(-5, moyenne_discrimination)  # Sélectionne les 5 pays avec les valeurs moyennes les plus basses
+
+# Créer un data frame pour les régions les plus discriminantes
+regions_plus_discriminantes23 <- moyennes_par_region23 %>%
+  top_n(1, moyenne_discrimination)  # Sélectionne la région avec la valeur moyenne la plus élevée
+
+# Créer un data frame pour les régions les moins discriminantes
+regions_moins_discriminantes23 <- moyennes_par_region23 %>%
+  top_n(-1, moyenne_discrimination)  # Sélectionne la région avec la valeur moyenne la plus basse
+
+# Combiner les deux data frames
+graph_data_region23 <- rbind(
+  data.frame(Niveau = "Plus élevé", Region = regions_plus_discriminantes23$Region, Valeur = regions_plus_discriminantes23$moyenne_discrimination),
+  data.frame(Niveau = "Plus bas", Region = regions_moins_discriminantes23$Region, Valeur = regions_moins_discriminantes23$moyenne_discrimination)
+)
+
+
+```
+
+
+```{r}
+library(ggplot2)
+
+# Pour les pays avec les niveaux les plus élevés de discrimination de genre
+ggplot(pays_plus_discriminants23, aes(x = reorder(Pays, moyenne_discrimination), y = moyenne_discrimination)) +
+  geom_bar(stat = "identity", fill = "maroon") +
+  geom_text(aes(label = sprintf("%.1f%%", moyenne_discrimination)), 
+            vjust = -0.5, color = "black", size = 3) +
+  labs(title = "Les pays avec les niveaux les plus élevés de discrimination de genre en 2023",
+       x = "Pays",
+       y = "Moyenne de la discrimination dans la famille") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+
+```{r}
+# Pour les pays avec les niveaux les plus bas de discrimination de genre
+ggplot(pays_moins_discriminants23, aes(x = reorder(Pays, -moyenne_discrimination), y = moyenne_discrimination)) +
+  geom_bar(stat = "identity", fill = "forestgreen") +
+  geom_text(aes(label = sprintf("%.1f%%", moyenne_discrimination)), 
+            vjust = -0.5, color = "black", size = 3) +
+  labs(title = "Les pays avec les niveaux les plus bas de discrimination de genre en 2023",
+       x = "Pays",
+       y = "Moyenne de la discrimination dans la famille") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+# Niveaux de discrimination de genre par région en 2023
+```{r}
+region_data <- data23 %>%
+  filter(Var_Sigi == "SIGI") %>%
+  group_by(Region) %>%
+  summarize(moyenne_discrimination = mean(Valeur, na.rm = TRUE))
+
+# Créer le diagramme de camembert
+ggplot(region_data, aes(x = "", y = moyenne_discrimination, fill = Region)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start = 0) +
+  labs(title = "Niveaux de discrimination de genre par région en 2023",
+       fill = "Région") +
+  theme_void() +
+  geom_text(aes(label = paste0(round(moyenne_discrimination, 1), "%")), 
+            position = position_stack(vjust = 0.5)) +
+  scale_fill_brewer(palette = "Set4")
+```
+
+
+
+
+# Explorez les corrélations entre différentes variables SIGI pour comprendre les relations entre les différentes dimensions de la discrimination de genre.Identifiez les modalité de ma variable Var_Sigi qui sont fortement corrélées entre elles. 
+
+
+
+
+
+# Graphique matrice de correlation
+
+```{r}
+# Sélectionner les variables pertinentes et résumer les noms
+data_discrimination <- data23 %>%
+  filter(Var_Sigi %in% c("Discrimination in the family", 
+                         "Restricted access to productive and financial resources", 
+                         "Restricted civil liberties", 
+                         "Restricted physical integrity")) %>%
+  select(Pays, Var_Sigi, Valeur) %>%
+  mutate(Var_Sigi = case_when(
+    Var_Sigi == "Discrimination in the family" ~ "Family",
+    Var_Sigi == "Restricted access to productive and financial resources" ~ "Resources",
+    Var_Sigi == "Restricted civil liberties" ~ "Civil liberties",
+    Var_Sigi == "Restricted physical integrity" ~ "Physical integrity"
+  )) %>%
+  spread(key = Var_Sigi, value = Valeur)
+
+# Convertir les colonnes pertinentes en numériques
+data_discrimination[, -1] <- lapply(data_discrimination[, -1], as.numeric)
+
+```
+
+```{r}
+# Calculer la matrice de corrélation
+correlation_matrix <- cor(data_discrimination[, -1], use = "complete.obs")
+
+# Créer une belle matrice de corrélation avec corrplot
+library(corrplot)
+corrplot(correlation_matrix, 
+         method = "color", 
+         type = "upper", 
+         order = "hclust",
+         addCoef.col = "black",
+         tl.col = "black",
+         tl.srt = 45,
+         diag = FALSE,
+         title = "Matrice de corrélation des variables SIGI",
+         mar = c(0,0,1,0))
+
+```
+
+
+
+
+
+# Carte choroplèthe des niveaux de discrimination de genre en 2023
+```{r}
+#install.packages("rnaturalearth")
+library(rnaturalearth)
+
+# Charger les données géographiques pour les pays
+world <- ne_countries(returnclass = "sf")
+
+# Fusionner les données de discrimination avec les données géographiques
+map_data <- left_join(world, data23 %>% filter(Var_Sigi == "SIGI"), by = c("name" = "Pays"))
+
+# Créer une carte choroplèthe
+ggplot() +
+  geom_sf(data = map_data, aes(fill = Valeur)) +
+  scale_fill_gradient(name = "Niveau de discrimination ", low = "palegreen", high = "darkred") +
+  labs(title = "Carte choroplèthe des niveaux de discrimination de genre en 2023",
+       subtitle = "Basé sur les données de discrimination de genre dans différents pays",
+       caption = "Source: Ocde (Sigi)") +
+  theme_void()
+
+```
+
+# # Carte choroplèthe des niveaux de discrimination de genre en 2019 
+```{r}
+# Charger les données géographiques pour les pays
+world <- ne_countries(returnclass = "sf")
+
+# Fusionner les données de discrimination avec les données géographiques
+map_data <- left_join(world, data19 %>% filter(Var_Sigi == "SIGI"), by = c("name" = "Pays"))
+
+# Créer une carte choroplèthe
+ggplot() +
+  geom_sf(data = map_data, aes(fill = Valeur)) +
+  scale_fill_gradient(name = "Niveau de discrimination", low = "palegreen", high = "darkred") +
+  labs(title = "Carte choroplèthe des niveaux de discrimination de genre en 2019",
+       subtitle = "Basé sur les données de discrimination de genre dans différents pays",
+       caption = "Source: Ocde (Sigi)") +
+  theme_void()
+
+```
+
+
+
+
+
+
+
+
+
+
+#############################################################
+#############################################################
+#######               Analyse de IDH              #########
+#############################################################
+#############################################################
+
+
+# Corrélation entre SIGI et IDH
+
+### 2019
+```{r}
+fusion_sigi19_idh <- merge(data19, IDH21, by = "ID_Pays", all.y  = TRUE)
+fusion_sigi19_idh_sigi = fusion_sigi19_idh %>%
+  filter(Var_Sigi == "SIGI")
+```
+
+
+```{r}
+correlation_test = cor.test(fusion_sigi19_idh_sigi$Valeur, fusion_sigi19_idh_sigi$Human.Development.Index, method = "pearson")
+
+print(correlation_test)
+```
+
+#### Dans le contexte d'un test de corrélation, l'hypothèse nulle est généralement que les deux variables ne sont pas corrélées dans la population sous-jacente. Ainsi, une p-value très faible indique que nous avons suffisamment de preuves pour rejeter l'hypothèse nulle et conclure qu'il existe une corrélation significative entre les deux variables.En résumé, une p-value extrêmement petite comme celle-ci suggère une forte corrélation entre les variables SIGI et IDH dans votre jeu de données.
+
+```{r}
+plot(fusion_sigi19_idh_sigi$Human.Development.Index, fusion_sigi19_idh_sigi$Valeu, main =  "Corrélation entre SIGI 2019 et IDH 2021", ylab = "Discrimination", xlab = "Indice de développement humain", col = "blue", pch = 8)
+```
+
+
+### 2023
+```{r}
+fusion_sigi23_idh <- merge(data23, IDH21, by = "ID_Pays", all.y  = TRUE)
+fusion_sigi23_idh_sigi = fusion_sigi23_idh %>%
+  filter(Var_Sigi == "SIGI")
+```
+
+```{r}
+correlation_test = cor.test(fusion_sigi23_idh_sigi$Valeur, fusion_sigi23_idh_sigi$Human.Development.Index, method = "pearson")
+
+print(correlation_test)
+```
+
+
+```{r}
+plot(fusion_sigi23_idh_sigi$Human.Development.Index, fusion_sigi23_idh_sigi$Valeur, main =  "Corrélation entre SIGI 2023 et IDH 2021", ylab = "Discrimination", xlab = "Indice de développement humain", col = "red", pch = 9)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+data_discrimination23_sans_NA = na.omit(data_discrimination23)
+```
+
+```{r}
+#install.packages("estimability")
+#install.packages("emmeans")
+#install.packages("FactoMineR")
+library(FactoMineR)
+
+```
+
+
+
+```{r}
+library(FactoMineR)
+#install.packages("Factoshiny")
+```
+
+
+```{r}
+library("Factoshiny")
+```
+
+
+
+
+# Data Europe 2023
+```{r}
+data_Europe23 = data23 %>%
+  filter(Var_Sigi %in% c("Discrimination in the family", "Restricted access to productive and financial resources", "Restricted civil liberties", "Restricted physical integrity", "SIGI")) %>%
+  select(Region, Pays, Var_Sigi, Valeur) %>%
+  spread(key = Var_Sigi, value = Valeur) %>%
+  filter(Region == "Europe" )
+data_discrimination[, -c(1, 2)] <- lapply(data_discrimination[, -c(1, 2)], as.numeric)
+```
+
+```{r}
+View(data_Europe23)
+```
+
+
+
+
+# ACP
+```{r}
+# Installer missMDA si ce n'est pas déjà fait
+#install.packages("missMDA")
+
+# Charger le package
+library(missMDA)
+
+```
+
+# Séparer les variables qualitatives et quantitatives
+```{r}
+# Sélection des variables quantitatives uniquement
+data_Europe23_quant <- data_Europe23 %>%
+  select(`Discrimination in the family`, 
+         `Restricted access to productive and financial resources`, 
+         `Restricted civil liberties`, 
+         `Restricted physical integrity`, 
+         `SIGI`)
+```
+
+# Convertir les valeurs en numériques si nécessaire
+```{r}
+# Convertir les colonnes en numériques
+data_quant <- data_Europe23_quant %>%
+  mutate_all(~as.numeric(as.character(.)))
+
+```
+
+
+# Imputer les valeurs manquantes avec imputePCA
+
+```{r}
+library(missMDA)
+
+# Estimer le nombre optimal de dimensions pour l'imputation
+ncp <- estim_ncpPCA(data_quant, ncp.max = 5)
+print(ncp)
+
+# Imputation des valeurs manquantes
+data_imputed <- imputePCA(data_quant, ncp = ncp$ncp)
+
+
+```
+
+
+```{r}
+rownames(data_Europe23) <- data_Europe23$Pays
+```
+
+
+
+# PCA
+```{r}
+# Créer le jeu de données final avec les données imputées
+data_final <- cbind(data_Europe23[, c("Region", "Pays")], data_imputed$completeObs)
+
+# Exécuter la PCA avec les variables qualitatives supplémentaires
+res.PCA <- PCA(data_final, quali.sup = c(1, 2), graph = FALSE)
+
+# Résumé des résultats
+summary(res.PCA)
+
+```
+
+
+
+
+                ####################################################
+                ####################################################
+
+#                             Classification
+
+                ####################################################
+                ####################################################
+
+# 3. HCPC avec étiquettes des pays
+```{r}
+# Classification hiérarchique sur les composantes principales
+res.HCPC <- HCPC(res.PCA, nb.clust = 4, consol = FALSE, graph = FALSE)
+
+```
+
+# Dendrogramme avec étiquettes des pays
+
+```{r}
+library(factoextra)
+
+# Visualisation du dendrogramme avec noms des pays
+fviz_dend(res.HCPC, 
+          rect = TRUE,            # Dessiner des rectangles autour des clusters
+          show_labels = TRUE,     # Afficher les noms des pays
+          cex = 0.7,              # Taille des étiquettes
+          main = "Dendrogramme hiérarchique avec étiquettes")
+
+```
+
+
+
+# Plan factoriel avec étiquettes des pays
+```{r}
+# Visualisation du plan factoriel avec étiquettes des pays
+fviz_cluster(res.HCPC, 
+             geom = "text",       # Afficher les étiquettes au lieu des points
+             repel = TRUE,        # Éviter le chevauchement des étiquettes
+             main = "Plan factoriel avec étiquettes des pays")
+
+```
+
+
+
+
+```{r}
+library(rgl)
+
+# Extraire les coordonnées des individus
+coords <- res.HCPC$call$t$data.clust
+
+# Graphique 3D avec étiquettes des pays
+plot3d(coords[, 1:3], col = res.HCPC$data.clust$clust, size = 5, type = "s")
+text3d(coords[, 1:3], texts = rownames(coords), cex = 0.7, col = "black")
+title3d("Dim 1", "Dim 2", "Dim 3", main = "Clusters en 3D avec étiquettes")
+
+```
+
+
+# Extraire les données des clusters
+```{r}
+# Extraire les données des clusters
+data_clusters <- res.HCPC$data.clust
+
+# Afficher un aperçu des données des clusters
+head(data_clusters)
+
+```
+# Calcul des moyennes par cluster
+```{r}
+library(dplyr)
+
+# Calcul des moyennes par cluster
+profil_clusters <- data_clusters %>%
+  group_by(clust) %>%
+  summarise(across(where(is.numeric), mean, na.rm = TRUE))
+
+# Afficher le profil des clusters
+print(profil_clusters)
+
+```
+
+
+
+# Barplot des moyennes par cluster
+
+### Pour visualiser les profils des clusters, nous pouvons tracer un graphique en barres montrant les moyennes de chaque variable par cluster.
+
+# Pour analyser les profils des clusters, nous devons examiner les caractéristiques moyennes de chaque cluster pour les différentes variables. Cette analyse permet de comprendre ce qui distingue les clusters les uns des autres.
+```{r}
+library(tidyr)
+library(ggplot2)
+library(dplyr)
+
+
+profil_clusters_long <- profil_clusters_long %>%
+  mutate(Variable = recode(Variable,
+                           "Discrimination in the family" = "Discrimination familiale",
+                           "Restricted access to productive and financial resources" = "Accès ressources",
+                           "Restricted civil liberties" = "Libertés civiles",
+                           "Restricted physical integrity" = "Intégrité physique",
+                           "SIGI" = "SIGI"))
+
+# Tracer à nouveau avec les noms simplifiés
+ggplot(profil_clusters_long, aes(x = Variable, y = Valeur, fill = as.factor(clust))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Profil des clusters", x = "Variables", y = "Moyennes") +
+  theme_minimal() +
+  scale_fill_manual(name = "Cluster", values = c("red", "blue", "green")) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10))
+
+
+```
+
+
+
+
+
+
+
+
+# Analyse de Détection d’Anomalies
+
+Objectif : Identifier des pays qui se comportent de manière atypique par rapport au reste des données.
+Méthode : Utiliser des scores Z pour détecter les outliers.
+interprétation : Identifiez les pays ayant des comportements atypiques sur les variables étudiées.
+
+
+Les scores Z mesurent la distance d'une observation par rapport à la moyenne en unités d'écart-type. Une observation avec un score Z absolu élevé (par exemple, supérieur à 3) est considérée comme une anomalie.
+
+
+
+
+```{r}
+# Standardiser les données numériques
+data_scaled <- scale(data_Europe23[, sapply(data_Europe23, is.numeric)])
+
+# Calculer les scores Z maximums pour chaque observation
+z_scores <- apply(data_scaled, 1, function(x) max(abs(x)))  # Maximum absolu des scores Z
+
+# Ajouter les scores Z dans le jeu de données
+data_Europe23$z_score <- z_scores
+
+# Identifier les anomalies (z_score > 3)
+anomalies <- data_Europe23 %>% filter(z_score > 3)
+
+```
+
+
+
+```{r}
+library(ggplot2)
+
+# Ajouter une colonne pour marquer les anomalies
+data_Europe23$Anomaly <- ifelse(data_Europe23$z_score > 3, "Anomalie", "Normal")
+
+# Tracer les anomalies avec les étiquettes des pays
+ggplot(data_Europe23, aes(x = 1:nrow(data_Europe23), y = z_score, color = Anomaly)) +
+  geom_point(size = 3) +  # Points représentant les pays
+  geom_text(aes(label = Pays), vjust = -0.5, hjust = 0.5, size = 3) +  # Afficher les étiquettes pour tous les pays
+  geom_hline(yintercept = 3, color = "red", linetype = "dashed") +  # Ligne de seuil d'anomalie
+  labs(title = "Détection des anomalies avec étiquettes", 
+       x = "Index des observations", y = "Score Z") +
+  theme_minimal() +
+  scale_color_manual(values = c("Normal" = "blue", "Anomalie" = "red"))
+
+```
+
+
+
+  
+
+
+# Regression
+
+```{r}
+# Régression multiple pour prédire SIGI en fonction de plusieurs variables explicatives
+modele_SIGI <- lm(SIGI ~ `Discrimination in the family` + 
+                  `Restricted access to productive and financial resources` + 
+                  `Restricted civil liberties` + 
+                  `Restricted physical integrity`, 
+                  data = data_Europe23)
+
+# Résumé du modèle pour examiner les coefficients et la qualité du modèle
+summary(modele_SIGI)
+
+```
+
+```{r}
+# Vérifier les résidus du modèle
+par(mfrow = c(2, 2))  # Disposition pour plusieurs graphiques
+plot(modele_SIGI)
+
+```
+```{r}
+# Prédictions sur les données existantes
+data_Europe23$predictions_SIGI <- predict(modele_SIGI, newdata = data_Europe23)
+
+# Afficher les premières prédictions
+head(data_Europe23$predictions_SIGI)
+
+```
+
+```{r}
+# Tracer les prédictions contre les valeurs réelles
+ggplot(data_Europe23, aes(x = SIGI, y = predictions_SIGI)) +
+  geom_point() +
+  geom_abline(intercept = 0, slope = 1, color = "red") +  # Ligne d'égalité
+  labs(title = "Prédictions vs Réel pour SIGI", x = "SIGI Réel", y = "SIGI Prédit")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
