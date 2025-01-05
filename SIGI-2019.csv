@@ -1,0 +1,706 @@
+Region;ID_Pays;Pays;Var_Sigi;Année;Valeur
+Asia;AFG;Afghanistan;SIGI;2019;52.8
+Asia;AFG;Afghanistan;Discrimination in the family;2019;81.3
+Asia;AFG;Afghanistan;Restricted physical integrity;2019;39.8
+Asia;AFG;Afghanistan;Restricted access to productive and financial resources;2019;45.6
+Asia;AFG;Afghanistan;Restricted civil liberties;2019;38.1
+Europe;ALB;Albania;SIGI;2019;22.6
+Europe;ALB;Albania;Discrimination in the family;2019;33.3
+Europe;ALB;Albania;Restricted physical integrity;2019;16.4
+Europe;ALB;Albania;Restricted access to productive and financial resources;2019;26
+Europe;ALB;Albania;Restricted civil liberties;2019;13.4
+Africa;DZA;Algeria;Discrimination in the family;2019;79.9
+Africa;DZA;Algeria;Restricted access to productive and financial resources;2019;41.2
+Africa;DZA;Algeria;Restricted civil liberties;2019;61.3
+Africa;AGO;Angola;Discrimination in the family;2019;47.2
+Africa;AGO;Angola;Restricted physical integrity;2019;19
+Americas;ATG;Antigua and Barbuda;Discrimination in the family;2019;22.2
+Americas;ARG;Argentina;Discrimination in the family;2019;23.1
+Americas;ARG;Argentina;Restricted access to productive and financial resources;2019;23
+Americas;ARG;Argentina;Restricted civil liberties;2019;7.1
+Asia;ARM;Armenia;SIGI;2019;27.8
+Asia;ARM;Armenia;Discrimination in the family;2019;33
+Asia;ARM;Armenia;Restricted physical integrity;2019;34.5
+Asia;ARM;Armenia;Restricted access to productive and financial resources;2019;23.4
+Asia;ARM;Armenia;Restricted civil liberties;2019;19.4
+Asia;AUS;Australia;SIGI;2019;16.1
+Asia;AUS;Australia;Discrimination in the family;2019;21.8
+Asia;AUS;Australia;Restricted physical integrity;2019;12.9
+Asia;AUS;Australia;Restricted access to productive and financial resources;2019;4.9
+Asia;AUS;Australia;Restricted civil liberties;2019;23.6
+Europe;AUT;Austria;SIGI;2019;11.7
+Europe;AUT;Austria;Discrimination in the family;2019;22.1
+Europe;AUT;Austria;Restricted physical integrity;2019;7.7
+Europe;AUT;Austria;Restricted access to productive and financial resources;2019;4
+Europe;AUT;Austria;Restricted civil liberties;2019;12.1
+Asia;AZE;Azerbaijan;SIGI;2019;28.7
+Asia;AZE;Azerbaijan;Discrimination in the family;2019;28.2
+Asia;AZE;Azerbaijan;Restricted physical integrity;2019;42.8
+Asia;AZE;Azerbaijan;Restricted access to productive and financial resources;2019;20.9
+Asia;AZE;Azerbaijan;Restricted civil liberties;2019;21.4
+Americas;BHS;Bahamas;Discrimination in the family;2019;22
+Asia;BHR;Bahrain;Discrimination in the family;2019;92.1
+Asia;BGD;Bangladesh;SIGI;2019;54.8
+Asia;BGD;Bangladesh;Discrimination in the family;2019;82.9
+Asia;BGD;Bangladesh;Restricted physical integrity;2019;28.9
+Asia;BGD;Bangladesh;Restricted access to productive and financial resources;2019;52.1
+Asia;BGD;Bangladesh;Restricted civil liberties;2019;47.5
+Americas;BRB;Barbados;Discrimination in the family;2019;21.8
+Europe;BLR;Belarus;SIGI;2019;20.6
+Europe;BLR;Belarus;Discrimination in the family;2019;31.6
+Europe;BLR;Belarus;Restricted physical integrity;2019;14.7
+Europe;BLR;Belarus;Restricted access to productive and financial resources;2019;14.7
+Europe;BLR;Belarus;Restricted civil liberties;2019;20.5
+Europe;BEL;Belgium;SIGI;2019;11.2
+Europe;BEL;Belgium;Discrimination in the family;2019;22
+Europe;BEL;Belgium;Restricted physical integrity;2019;8.4
+Europe;BEL;Belgium;Restricted access to productive and financial resources;2019;3.3
+Europe;BEL;Belgium;Restricted civil liberties;2019;10.3
+Americas;BLZ;Belize;Discrimination in the family;2019;23.7
+Africa;BEN;Benin;SIGI;2019;39.8
+Africa;BEN;Benin;Discrimination in the family;2019;40.5
+Africa;BEN;Benin;Restricted physical integrity;2019;27.7
+Africa;BEN;Benin;Restricted access to productive and financial resources;2019;36.2
+Africa;BEN;Benin;Restricted civil liberties;2019;53.3
+Asia;BTN;Bhutan;Discrimination in the family;2019;40.5
+Asia;BTN;Bhutan;Restricted physical integrity;2019;22.9
+Americas;BOL;Bolivia;SIGI;2019;21.4
+Americas;BOL;Bolivia;Discrimination in the family;2019;28.5
+Americas;BOL;Bolivia;Restricted physical integrity;2019;16.2
+Americas;BOL;Bolivia;Restricted access to productive and financial resources;2019;27.4
+Americas;BOL;Bolivia;Restricted civil liberties;2019;12.7
+Europe;BIH;Bosnia and Herzegovina;SIGI;2019;21.8
+Europe;BIH;Bosnia and Herzegovina;Discrimination in the family;2019;27.4
+Europe;BIH;Bosnia and Herzegovina;Restricted physical integrity;2019;10.9
+Europe;BIH;Bosnia and Herzegovina;Restricted access to productive and financial resources;2019;30.6
+Europe;BIH;Bosnia and Herzegovina;Restricted civil liberties;2019;17.1
+Africa;BWA;Botswana;Discrimination in the family;2019;39.6
+Africa;BWA;Botswana;Restricted access to productive and financial resources;2019;39.9
+Africa;BWA;Botswana;Restricted civil liberties;2019;52.4
+Americas;BRA;Brazil;SIGI;2019;21.2
+Americas;BRA;Brazil;Discrimination in the family;2019;28
+Americas;BRA;Brazil;Restricted physical integrity;2019;14.8
+Americas;BRA;Brazil;Restricted access to productive and financial resources;2019;17.5
+Americas;BRA;Brazil;Restricted civil liberties;2019;23.9
+Asia;BRN;Brunei Darussalam;Discrimination in the family;2019;79.9
+Europe;BGR;Bulgaria;SIGI;2019;23.4
+Europe;BGR;Bulgaria;Discrimination in the family;2019;27.5
+Europe;BGR;Bulgaria;Restricted physical integrity;2019;15.6
+Europe;BGR;Bulgaria;Restricted access to productive and financial resources;2019;29.7
+Europe;BGR;Bulgaria;Restricted civil liberties;2019;20.1
+Africa;BFA;Burkina Faso;SIGI;2019;32.4
+Africa;BFA;Burkina Faso;Discrimination in the family;2019;44.9
+Africa;BFA;Burkina Faso;Restricted physical integrity;2019;35.5
+Africa;BFA;Burkina Faso;Restricted access to productive and financial resources;2019;32.9
+Africa;BFA;Burkina Faso;Restricted civil liberties;2019;13.8
+Africa;BDI;Burundi;Restricted physical integrity;2019;31.9
+Africa;CPV;Cabo Verde;Discrimination in the family;2019;36.8
+Africa;CPV;Cabo Verde;Restricted physical integrity;2019;9.9
+Asia;KHM;Cambodia;SIGI;2019;29.5
+Asia;KHM;Cambodia;Discrimination in the family;2019;34.2
+Asia;KHM;Cambodia;Restricted physical integrity;2019;13.5
+Asia;KHM;Cambodia;Restricted access to productive and financial resources;2019;27.6
+Asia;KHM;Cambodia;Restricted civil liberties;2019;40.9
+Africa;CMR;Cameroon;SIGI;2019;51.8
+Africa;CMR;Cameroon;Discrimination in the family;2019;51.1
+Africa;CMR;Cameroon;Restricted physical integrity;2019;26.3
+Africa;CMR;Cameroon;Restricted access to productive and financial resources;2019;77.7
+Africa;CMR;Cameroon;Restricted civil liberties;2019;45.4
+Americas;CAN;Canada;SIGI;2019;18.3
+Americas;CAN;Canada;Discrimination in the family;2019;26.5
+Americas;CAN;Canada;Restricted physical integrity;2019;4.2
+Americas;CAN;Canada;Restricted access to productive and financial resources;2019;17.4
+Americas;CAN;Canada;Restricted civil liberties;2019;23.5
+Africa;CAF;Central African Republic;SIGI;2019;43.4
+Africa;CAF;Central African Republic;Discrimination in the family;2019;56.4
+Africa;CAF;Central African Republic;Restricted physical integrity;2019;24.5
+Africa;CAF;Central African Republic;Restricted access to productive and financial resources;2019;35.1
+Africa;CAF;Central African Republic;Restricted civil liberties;2019;54.2
+Africa;TCD;Chad;SIGI;2019;45.4
+Africa;TCD;Chad;Discrimination in the family;2019;55.8
+Africa;TCD;Chad;Restricted physical integrity;2019;32.2
+Africa;TCD;Chad;Restricted access to productive and financial resources;2019;61.9
+Africa;TCD;Chad;Restricted civil liberties;2019;27.2
+Americas;CHL;Chile;SIGI;2019;36.1
+Americas;CHL;Chile;Discrimination in the family;2019;36.4
+Americas;CHL;Chile;Restricted physical integrity;2019;18.8
+Americas;CHL;Chile;Restricted access to productive and financial resources;2019;64.8
+Americas;CHL;Chile;Restricted civil liberties;2019;16.6
+Asia;CHN;China (People's Republic of);Discrimination in the family;2019;18.4
+Asia;TWN;Chinese Taipei;Discrimination in the family;2019;37.2
+Asia;TWN;Chinese Taipei;Restricted civil liberties;2019;15.9
+Americas;COL;Colombia;SIGI;2019;15
+Americas;COL;Colombia;Discrimination in the family;2019;9.6
+Americas;COL;Colombia;Restricted physical integrity;2019;14.9
+Americas;COL;Colombia;Restricted access to productive and financial resources;2019;14.5
+Americas;COL;Colombia;Restricted civil liberties;2019;20.6
+Africa;COM;Comoros;Discrimination in the family;2019;80.9
+Africa;COM;Comoros;Restricted physical integrity;2019;28.2
+Africa;COG;Congo;Discrimination in the family;2019;42.8
+Africa;COG;Congo;Restricted civil liberties;2019;58.3
+Americas;CRI;Costa Rica;SIGI;2019;27.9
+Americas;CRI;Costa Rica;Discrimination in the family;2019;45.7
+Americas;CRI;Costa Rica;Restricted physical integrity;2019;24.8
+Americas;CRI;Costa Rica;Restricted access to productive and financial resources;2019;27.5
+Americas;CRI;Costa Rica;Restricted civil liberties;2019;10.5
+Africa;CIV;Côte d'Ivoire;SIGI;2019;42.8
+Africa;CIV;Côte d'Ivoire;Discrimination in the family;2019;29.7
+Africa;CIV;Côte d'Ivoire;Restricted physical integrity;2019;35.6
+Africa;CIV;Côte d'Ivoire;Restricted access to productive and financial resources;2019;76.1
+Africa;CIV;Côte d'Ivoire;Restricted civil liberties;2019;20.4
+Europe;HRV;Croatia;SIGI;2019;19.3
+Europe;HRV;Croatia;Discrimination in the family;2019;22
+Europe;HRV;Croatia;Restricted physical integrity;2019;7
+Europe;HRV;Croatia;Restricted access to productive and financial resources;2019;29.1
+Europe;HRV;Croatia;Restricted civil liberties;2019;17.9
+Americas;CUB;Cuba;Discrimination in the family;2019;28.9
+Asia;CYP;Cyprus;SIGI;2019;28.3
+Asia;CYP;Cyprus;Discrimination in the family;2019;42.3
+Asia;CYP;Cyprus;Restricted physical integrity;2019;11.7
+Asia;CYP;Cyprus;Restricted access to productive and financial resources;2019;19.3
+Asia;CYP;Cyprus;Restricted civil liberties;2019;36.7
+Europe;CZE;Czechia;SIGI;2019;19.8
+Europe;CZE;Czechia;Discrimination in the family;2019;27.3
+Europe;CZE;Czechia;Restricted physical integrity;2019;12.8
+Europe;CZE;Czechia;Restricted access to productive and financial resources;2019;11.9
+Europe;CZE;Czechia;Restricted civil liberties;2019;26.3
+Africa;COD;Democratic Republic of the Congo;SIGI;2019;39.5
+Africa;COD;Democratic Republic of the Congo;Discrimination in the family;2019;53
+Africa;COD;Democratic Republic of the Congo;Restricted physical integrity;2019;35.1
+Africa;COD;Democratic Republic of the Congo;Restricted access to productive and financial resources;2019;46.4
+Africa;COD;Democratic Republic of the Congo;Restricted civil liberties;2019;20.7
+Europe;DNK;Denmark;SIGI;2019;10.4
+Europe;DNK;Denmark;Discrimination in the family;2019;15
+Europe;DNK;Denmark;Restricted physical integrity;2019;10.2
+Europe;DNK;Denmark;Restricted access to productive and financial resources;2019;4.8
+Europe;DNK;Denmark;Restricted civil liberties;2019;11
+Africa;DJI;Djibouti;Discrimination in the family;2019;72.9
+Americas;DMA;Dominica;Discrimination in the family;2019;42.1
+Americas;DOM;Dominican Republic;SIGI;2019;18.2
+Americas;DOM;Dominican Republic;Discrimination in the family;2019;30.3
+Americas;DOM;Dominican Republic;Restricted physical integrity;2019;18.1
+Americas;DOM;Dominican Republic;Restricted access to productive and financial resources;2019;11.9
+Americas;DOM;Dominican Republic;Restricted civil liberties;2019;11.2
+Americas;ECU;Ecuador;SIGI;2019;28.9
+Americas;ECU;Ecuador;Discrimination in the family;2019;34.8
+Americas;ECU;Ecuador;Restricted physical integrity;2019;18.9
+Americas;ECU;Ecuador;Restricted access to productive and financial resources;2019;44
+Americas;ECU;Ecuador;Restricted civil liberties;2019;15.1
+Africa;EGY;Egypt;Discrimination in the family;2019;78.6
+Africa;EGY;Egypt;Restricted access to productive and financial resources;2019;64.6
+Americas;SLV;El Salvador;SIGI;2019;22.9
+Americas;SLV;El Salvador;Discrimination in the family;2019;26.1
+Americas;SLV;El Salvador;Restricted physical integrity;2019;27.4
+Americas;SLV;El Salvador;Restricted access to productive and financial resources;2019;20
+Americas;SLV;El Salvador;Restricted civil liberties;2019;17.8
+Africa;GNQ;Equatorial Guinea;Discrimination in the family;2019;63.9
+Africa;GNQ;Equatorial Guinea;Restricted physical integrity;2019;37.5
+Africa;ERI;Eritrea;Discrimination in the family;2019;42
+Europe;EST;Estonia;SIGI;2019;14.1
+Europe;EST;Estonia;Discrimination in the family;2019;21.8
+Europe;EST;Estonia;Restricted physical integrity;2019;7.3
+Europe;EST;Estonia;Restricted access to productive and financial resources;2019;4.6
+Europe;EST;Estonia;Restricted civil liberties;2019;21.5
+Africa;SWZ;Eswatini;Discrimination in the family;2019;59.2
+Africa;ETH;Ethiopia;SIGI;2019;29.6
+Africa;ETH;Ethiopia;Discrimination in the family;2019;34.8
+Africa;ETH;Ethiopia;Restricted physical integrity;2019;30.8
+Africa;ETH;Ethiopia;Restricted access to productive and financial resources;2019;34
+Africa;ETH;Ethiopia;Restricted civil liberties;2019;17.9
+Asia;FJI;Fiji;Discrimination in the family;2019;24.7
+Europe;FIN;Finland;SIGI;2019;15.3
+Europe;FIN;Finland;Discrimination in the family;2019;21.8
+Europe;FIN;Finland;Restricted physical integrity;2019;16.4
+Europe;FIN;Finland;Restricted access to productive and financial resources;2019;3.8
+Europe;FIN;Finland;Restricted civil liberties;2019;18.3
+Europe;FRA;France;SIGI;2019;11.1
+Europe;FRA;France;Discrimination in the family;2019;27.6
+Europe;FRA;France;Restricted physical integrity;2019;6
+Europe;FRA;France;Restricted access to productive and financial resources;2019;3.6
+Europe;FRA;France;Restricted civil liberties;2019;5.3
+Africa;GAB;Gabon;SIGI;2019;40.1
+Africa;GAB;Gabon;Discrimination in the family;2019;50.5
+Africa;GAB;Gabon;Restricted physical integrity;2019;37.3
+Africa;GAB;Gabon;Restricted access to productive and financial resources;2019;45.5
+Africa;GAB;Gabon;Restricted civil liberties;2019;25.6
+Africa;GMB;Gambia;Discrimination in the family;2019;87.8
+Africa;GMB;Gambia;Restricted physical integrity;2019;44.9
+Africa;GMB;Gambia;Restricted civil liberties;2019;48.4
+Asia;GEO;Georgia;SIGI;2019;24.8
+Asia;GEO;Georgia;Discrimination in the family;2019;34
+Asia;GEO;Georgia;Restricted physical integrity;2019;18.3
+Asia;GEO;Georgia;Restricted access to productive and financial resources;2019;27.3
+Asia;GEO;Georgia;Restricted civil liberties;2019;18.7
+Europe;DEU;Germany;SIGI;2019;15
+Europe;DEU;Germany;Discrimination in the family;2019;18.1
+Europe;DEU;Germany;Restricted physical integrity;2019;14.5
+Europe;DEU;Germany;Restricted access to productive and financial resources;2019;13.1
+Europe;DEU;Germany;Restricted civil liberties;2019;14.3
+Africa;GHA;Ghana;SIGI;2019;34.5
+Africa;GHA;Ghana;Discrimination in the family;2019;59.5
+Africa;GHA;Ghana;Restricted physical integrity;2019;20.2
+Africa;GHA;Ghana;Restricted access to productive and financial resources;2019;30.7
+Africa;GHA;Ghana;Restricted civil liberties;2019;22.7
+Europe;GRC;Greece;SIGI;2019;27.1
+Europe;GRC;Greece;Discrimination in the family;2019;45.1
+Europe;GRC;Greece;Restricted physical integrity;2019;9.3
+Europe;GRC;Greece;Restricted access to productive and financial resources;2019;33.3
+Europe;GRC;Greece;Restricted civil liberties;2019;16.6
+Americas;GRD;Grenada;Discrimination in the family;2019;53.7
+Americas;GTM;Guatemala;SIGI;2019;28.6
+Americas;GTM;Guatemala;Discrimination in the family;2019;26.1
+Americas;GTM;Guatemala;Restricted physical integrity;2019;24.5
+Americas;GTM;Guatemala;Restricted access to productive and financial resources;2019;18.4
+Americas;GTM;Guatemala;Restricted civil liberties;2019;43.4
+Africa;GIN;Guinea;SIGI;2019;56.7
+Africa;GIN;Guinea;Discrimination in the family;2019;87.7
+Africa;GIN;Guinea;Restricted physical integrity;2019;56.9
+Africa;GIN;Guinea;Restricted access to productive and financial resources;2019;28.2
+Africa;GIN;Guinea;Restricted civil liberties;2019;44.4
+Africa;GNB;Guinea-Bissau;Discrimination in the family;2019;59.7
+Americas;GUY;Guyana;Discrimination in the family;2019;21.8
+Americas;HTI;Haiti;SIGI;2019;39.9
+Americas;HTI;Haiti;Discrimination in the family;2019;37.6
+Americas;HTI;Haiti;Restricted physical integrity;2019;37.3
+Americas;HTI;Haiti;Restricted access to productive and financial resources;2019;22
+Americas;HTI;Haiti;Restricted civil liberties;2019;59.1
+Americas;HND;Honduras;SIGI;2019;22.4
+Americas;HND;Honduras;Discrimination in the family;2019;24.9
+Americas;HND;Honduras;Restricted physical integrity;2019;25
+Americas;HND;Honduras;Restricted access to productive and financial resources;2019;24.1
+Americas;HND;Honduras;Restricted civil liberties;2019;15.3
+Asia;HKG;Hong Kong, China;SIGI;2019;21.2
+Asia;HKG;Hong Kong, China;Discrimination in the family;2019;21.8
+Asia;HKG;Hong Kong, China;Restricted physical integrity;2019;22.5
+Asia;HKG;Hong Kong, China;Restricted access to productive and financial resources;2019;13.4
+Asia;HKG;Hong Kong, China;Restricted civil liberties;2019;26.7
+Europe;HUN;Hungary;SIGI;2019;25.7
+Europe;HUN;Hungary;Discrimination in the family;2019;34.1
+Europe;HUN;Hungary;Restricted physical integrity;2019;17.1
+Europe;HUN;Hungary;Restricted access to productive and financial resources;2019;23.4
+Europe;HUN;Hungary;Restricted civil liberties;2019;27.6
+Europe;ISL;Iceland;Discrimination in the family;2019;21.8
+Europe;ISL;Iceland;Restricted civil liberties;2019;17.4
+Asia;IND;India;SIGI;2019;34
+Asia;IND;India;Discrimination in the family;2019;46.9
+Asia;IND;India;Restricted physical integrity;2019;29.3
+Asia;IND;India;Restricted access to productive and financial resources;2019;36.9
+Asia;IND;India;Restricted civil liberties;2019;21.2
+Asia;IDN;Indonesia;SIGI;2019;41.6
+Asia;IDN;Indonesia;Discrimination in the family;2019;63.1
+Asia;IDN;Indonesia;Restricted physical integrity;2019;21.9
+Asia;IDN;Indonesia;Restricted access to productive and financial resources;2019;36.5
+Asia;IDN;Indonesia;Restricted civil liberties;2019;40.4
+Asia;IRN;Iran;SIGI;2019;58.3
+Asia;IRN;Iran;Discrimination in the family;2019;89.9
+Asia;IRN;Iran;Restricted physical integrity;2019;29.1
+Asia;IRN;Iran;Restricted access to productive and financial resources;2019;22.5
+Asia;IRN;Iran;Restricted civil liberties;2019;75.1
+Asia;IRQ;Iraq;SIGI;2019;53.7
+Asia;IRQ;Iraq;Discrimination in the family;2019;87.5
+Asia;IRQ;Iraq;Restricted physical integrity;2019;30.7
+Asia;IRQ;Iraq;Restricted access to productive and financial resources;2019;34.4
+Asia;IRQ;Iraq;Restricted civil liberties;2019;51.5
+Europe;IRL;Ireland;SIGI;2019;17.1
+Europe;IRL;Ireland;Discrimination in the family;2019;21.8
+Europe;IRL;Ireland;Restricted physical integrity;2019;18.5
+Europe;IRL;Ireland;Restricted access to productive and financial resources;2019;15.9
+Europe;IRL;Ireland;Restricted civil liberties;2019;11.8
+Asia;ISR;Israel;Discrimination in the family;2019;46.8
+Asia;ISR;Israel;Restricted access to productive and financial resources;2019;28.3
+Asia;ISR;Israel;Restricted civil liberties;2019;38.4
+Europe;ITA;Italy;SIGI;2019;13.5
+Europe;ITA;Italy;Discrimination in the family;2019;21.8
+Europe;ITA;Italy;Restricted physical integrity;2019;14.7
+Europe;ITA;Italy;Restricted access to productive and financial resources;2019;8
+Europe;ITA;Italy;Restricted civil liberties;2019;8.9
+Americas;JAM;Jamaica;SIGI;2019;24.7
+Americas;JAM;Jamaica;Discrimination in the family;2019;32
+Americas;JAM;Jamaica;Restricted physical integrity;2019;24.5
+Americas;JAM;Jamaica;Restricted access to productive and financial resources;2019;18.7
+Americas;JAM;Jamaica;Restricted civil liberties;2019;22.9
+Asia;JPN;Japan;SIGI;2019;24
+Asia;JPN;Japan;Discrimination in the family;2019;20.2
+Asia;JPN;Japan;Restricted physical integrity;2019;21.3
+Asia;JPN;Japan;Restricted access to productive and financial resources;2019;29.6
+Asia;JPN;Japan;Restricted civil liberties;2019;24.8
+Asia;JOR;Jordan;SIGI;2019;57.3
+Asia;JOR;Jordan;Discrimination in the family;2019;86.9
+Asia;JOR;Jordan;Restricted physical integrity;2019;25.2
+Asia;JOR;Jordan;Restricted access to productive and financial resources;2019;43.4
+Asia;JOR;Jordan;Restricted civil liberties;2019;63.1
+Asia;KAZ;Kazakhstan;SIGI;2019;22.5
+Asia;KAZ;Kazakhstan;Discrimination in the family;2019;22.4
+Asia;KAZ;Kazakhstan;Restricted physical integrity;2019;14.4
+Asia;KAZ;Kazakhstan;Restricted access to productive and financial resources;2019;30.6
+Asia;KAZ;Kazakhstan;Restricted civil liberties;2019;21.8
+Africa;KEN;Kenya;SIGI;2019;35.5
+Africa;KEN;Kenya;Discrimination in the family;2019;50.5
+Africa;KEN;Kenya;Restricted physical integrity;2019;28.9
+Africa;KEN;Kenya;Restricted access to productive and financial resources;2019;42.2
+Africa;KEN;Kenya;Restricted civil liberties;2019;17.2
+Asia;KOR;Korea;SIGI;2019;23.4
+Asia;KOR;Korea;Discrimination in the family;2019;21.8
+Asia;KOR;Korea;Restricted physical integrity;2019;17.5
+Asia;KOR;Korea;Restricted access to productive and financial resources;2019;33
+Asia;KOR;Korea;Restricted civil liberties;2019;20.4
+Europe;XKO;Kosovo;Discrimination in the family;2019;27.8
+Europe;XKO;Kosovo;Restricted access to productive and financial resources;2019;17.7
+Europe;XKO;Kosovo;Restricted civil liberties;2019;15
+Asia;KWT;Kuwait;Discrimination in the family;2019;75.8
+Asia;KWT;Kuwait;Restricted access to productive and financial resources;2019;80.3
+Asia;KGZ;Kyrgyzstan;SIGI;2019;23.2
+Asia;KGZ;Kyrgyzstan;Discrimination in the family;2019;28.7
+Asia;KGZ;Kyrgyzstan;Restricted physical integrity;2019;16.6
+Asia;KGZ;Kyrgyzstan;Restricted access to productive and financial resources;2019;28.8
+Asia;KGZ;Kyrgyzstan;Restricted civil liberties;2019;18
+Asia;LAO;Lao People's Democratic Republic;SIGI;2019;26.2
+Asia;LAO;Lao People's Democratic Republic;Discrimination in the family;2019;31.3
+Asia;LAO;Lao People's Democratic Republic;Restricted physical integrity;2019;23.9
+Asia;LAO;Lao People's Democratic Republic;Restricted access to productive and financial resources;2019;20.2
+Asia;LAO;Lao People's Democratic Republic;Restricted civil liberties;2019;29
+Europe;LVA;Latvia;SIGI;2019;17.8
+Europe;LVA;Latvia;Discrimination in the family;2019;21.8
+Europe;LVA;Latvia;Restricted physical integrity;2019;15.7
+Europe;LVA;Latvia;Restricted access to productive and financial resources;2019;4.6
+Europe;LVA;Latvia;Restricted civil liberties;2019;27.7
+Asia;LBN;Lebanon;SIGI;2019;56.2
+Asia;LBN;Lebanon;Discrimination in the family;2019;82.5
+Asia;LBN;Lebanon;Restricted physical integrity;2019;26.6
+Asia;LBN;Lebanon;Restricted access to productive and financial resources;2019;45.1
+Asia;LBN;Lebanon;Restricted civil liberties;2019;62.1
+Africa;LSO;Lesotho;SIGI;2019;38.1
+Africa;LSO;Lesotho;Discrimination in the family;2019;46.5
+Africa;LSO;Lesotho;Restricted physical integrity;2019;26.9
+Africa;LSO;Lesotho;Restricted access to productive and financial resources;2019;40.5
+Africa;LSO;Lesotho;Restricted civil liberties;2019;37.6
+Africa;LBR;Liberia;SIGI;2019;47.5
+Africa;LBR;Liberia;Discrimination in the family;2019;60
+Africa;LBR;Liberia;Restricted physical integrity;2019;33.5
+Africa;LBR;Liberia;Restricted access to productive and financial resources;2019;41.5
+Africa;LBR;Liberia;Restricted civil liberties;2019;52.8
+Africa;LBY;Libya;Discrimination in the family;2019;40.8
+Europe;LTU;Lithuania;SIGI;2019;15.6
+Europe;LTU;Lithuania;Discrimination in the family;2019;27.3
+Europe;LTU;Lithuania;Restricted physical integrity;2019;9.3
+Europe;LTU;Lithuania;Restricted access to productive and financial resources;2019;4.6
+Europe;LTU;Lithuania;Restricted civil liberties;2019;19.7
+Europe;LUX;Luxembourg;Discrimination in the family;2019;21.9
+Europe;LUX;Luxembourg;Restricted access to productive and financial resources;2019;7.3
+Europe;LUX;Luxembourg;Restricted civil liberties;2019;8.1
+Africa;MDG;Madagascar;SIGI;2019;47.5
+Africa;MDG;Madagascar;Discrimination in the family;2019;57.2
+Africa;MDG;Madagascar;Restricted physical integrity;2019;31.6
+Africa;MDG;Madagascar;Restricted access to productive and financial resources;2019;39.2
+Africa;MDG;Madagascar;Restricted civil liberties;2019;59.4
+Africa;MWI;Malawi;SIGI;2019;41.4
+Africa;MWI;Malawi;Discrimination in the family;2019;38.5
+Africa;MWI;Malawi;Restricted physical integrity;2019;24.1
+Africa;MWI;Malawi;Restricted access to productive and financial resources;2019;37.4
+Africa;MWI;Malawi;Restricted civil liberties;2019;61.9
+Asia;MYS;Malaysia;Discrimination in the family;2019;80.8
+Asia;MDV;Maldives;Discrimination in the family;2019;80
+Asia;MDV;Maldives;Restricted physical integrity;2019;29
+Africa;MLI;Mali;SIGI;2019;46
+Africa;MLI;Mali;Discrimination in the family;2019;63.5
+Africa;MLI;Mali;Restricted physical integrity;2019;48.4
+Africa;MLI;Mali;Restricted access to productive and financial resources;2019;39.9
+Africa;MLI;Mali;Restricted civil liberties;2019;28.9
+Europe;MLT;Malta;SIGI;2019;21.5
+Europe;MLT;Malta;Discrimination in the family;2019;24.9
+Europe;MLT;Malta;Restricted physical integrity;2019;28.4
+Europe;MLT;Malta;Restricted access to productive and financial resources;2019;4.9
+Europe;MLT;Malta;Restricted civil liberties;2019;26.3
+Africa;MRT;Mauritania;Discrimination in the family;2019;88.1
+Africa;MRT;Mauritania;Restricted civil liberties;2019;52.2
+Africa;MUS;Mauritius;Discrimination in the family;2019;52.7
+Africa;MUS;Mauritius;Restricted access to productive and financial resources;2019;19.2
+Africa;MUS;Mauritius;Restricted civil liberties;2019;40.7
+Americas;MEX;Mexico;SIGI;2019;29
+Americas;MEX;Mexico;Discrimination in the family;2019;60.4
+Americas;MEX;Mexico;Restricted physical integrity;2019;15.6
+Americas;MEX;Mexico;Restricted access to productive and financial resources;2019;17.5
+Americas;MEX;Mexico;Restricted civil liberties;2019;14.6
+Europe;MDA;Moldova;SIGI;2019;21.4
+Europe;MDA;Moldova;Discrimination in the family;2019;23
+Europe;MDA;Moldova;Restricted physical integrity;2019;12.7
+Europe;MDA;Moldova;Restricted access to productive and financial resources;2019;36.7
+Europe;MDA;Moldova;Restricted civil liberties;2019;11
+Asia;MNG;Mongolia;SIGI;2019;20
+Asia;MNG;Mongolia;Discrimination in the family;2019;27.8
+Asia;MNG;Mongolia;Restricted physical integrity;2019;8.1
+Asia;MNG;Mongolia;Restricted access to productive and financial resources;2019;20.1
+Asia;MNG;Mongolia;Restricted civil liberties;2019;22.9
+Europe;MNE;Montenegro;Discrimination in the family;2019;27.6
+Europe;MNE;Montenegro;Restricted access to productive and financial resources;2019;28.7
+Europe;MNE;Montenegro;Restricted civil liberties;2019;13.7
+Africa;MAR;Morocco;SIGI;2019;50.8
+Africa;MAR;Morocco;Discrimination in the family;2019;73.4
+Africa;MAR;Morocco;Restricted physical integrity;2019;25.7
+Africa;MAR;Morocco;Restricted access to productive and financial resources;2019;37.8
+Africa;MAR;Morocco;Restricted civil liberties;2019;59.3
+Africa;MOZ;Mozambique;SIGI;2019;24.3
+Africa;MOZ;Mozambique;Discrimination in the family;2019;32
+Africa;MOZ;Mozambique;Restricted physical integrity;2019;15.5
+Africa;MOZ;Mozambique;Restricted access to productive and financial resources;2019;15.3
+Africa;MOZ;Mozambique;Restricted civil liberties;2019;32.9
+Asia;MMR;Myanmar;SIGI;2019;42.4
+Asia;MMR;Myanmar;Discrimination in the family;2019;47.7
+Asia;MMR;Myanmar;Restricted physical integrity;2019;29.5
+Asia;MMR;Myanmar;Restricted access to productive and financial resources;2019;35.5
+Asia;MMR;Myanmar;Restricted civil liberties;2019;54.9
+Africa;NAM;Namibia;SIGI;2019;27.1
+Africa;NAM;Namibia;Discrimination in the family;2019;33.1
+Africa;NAM;Namibia;Restricted physical integrity;2019;12.6
+Africa;NAM;Namibia;Restricted access to productive and financial resources;2019;26.2
+Africa;NAM;Namibia;Restricted civil liberties;2019;35.1
+Asia;NPL;Nepal;SIGI;2019;36.2
+Asia;NPL;Nepal;Discrimination in the family;2019;52.3
+Asia;NPL;Nepal;Restricted physical integrity;2019;13.7
+Asia;NPL;Nepal;Restricted access to productive and financial resources;2019;34.7
+Asia;NPL;Nepal;Restricted civil liberties;2019;40.2
+Europe;NLD;Netherlands;SIGI;2019;16.1
+Europe;NLD;Netherlands;Discrimination in the family;2019;23.8
+Europe;NLD;Netherlands;Restricted physical integrity;2019;13.5
+Europe;NLD;Netherlands;Restricted access to productive and financial resources;2019;5
+Europe;NLD;Netherlands;Restricted civil liberties;2019;21.1
+Asia;NZL;New Zealand;SIGI;2019;16.7
+Asia;NZL;New Zealand;Discrimination in the family;2019;21.9
+Asia;NZL;New Zealand;Restricted physical integrity;2019;17.5
+Asia;NZL;New Zealand;Restricted access to productive and financial resources;2019;4.3
+Asia;NZL;New Zealand;Restricted civil liberties;2019;22
+Americas;NIC;Nicaragua;SIGI;2019;18.6
+Americas;NIC;Nicaragua;Discrimination in the family;2019;25.3
+Americas;NIC;Nicaragua;Restricted physical integrity;2019;25.6
+Americas;NIC;Nicaragua;Restricted access to productive and financial resources;2019;16
+Americas;NIC;Nicaragua;Restricted civil liberties;2019;6.2
+Africa;NER;Niger;Discrimination in the family;2019;84.4
+Africa;NER;Niger;Restricted civil liberties;2019;25.6
+Africa;NGA;Nigeria;SIGI;2019;46
+Africa;NGA;Nigeria;Discrimination in the family;2019;54.8
+Africa;NGA;Nigeria;Restricted physical integrity;2019;32
+Africa;NGA;Nigeria;Restricted access to productive and financial resources;2019;41.4
+Africa;NGA;Nigeria;Restricted civil liberties;2019;53.9
+Europe;MKD;North Macedonia;SIGI;2019;18
+Europe;MKD;North Macedonia;Discrimination in the family;2019;27.7
+Europe;MKD;North Macedonia;Restricted physical integrity;2019;15.1
+Europe;MKD;North Macedonia;Restricted access to productive and financial resources;2019;13.4
+Europe;MKD;North Macedonia;Restricted civil liberties;2019;15.2
+Europe;NOR;Norway;SIGI;2019;14.5
+Europe;NOR;Norway;Discrimination in the family;2019;27.3
+Europe;NOR;Norway;Restricted physical integrity;2019;7
+Europe;NOR;Norway;Restricted access to productive and financial resources;2019;2.2
+Europe;NOR;Norway;Restricted civil liberties;2019;19.5
+Asia;OMN;Oman;Discrimination in the family;2019;86.5
+Asia;PAK;Pakistan;SIGI;2019;58.7
+Asia;PAK;Pakistan;Discrimination in the family;2019;79.8
+Asia;PAK;Pakistan;Restricted physical integrity;2019;37.1
+Asia;PAK;Pakistan;Restricted access to productive and financial resources;2019;60.1
+Asia;PAK;Pakistan;Restricted civil liberties;2019;53.1
+Asia;PSE;Palestinian Authority or West Bank and Gaza Strip;Discrimination in the family;2019;89.2
+Asia;PSE;Palestinian Authority or West Bank and Gaza Strip;Restricted access to productive and financial resources;2019;64.9
+Asia;PSE;Palestinian Authority or West Bank and Gaza Strip;Restricted civil liberties;2019;59.4
+Americas;PAN;Panama;Discrimination in the family;2019;15.5
+Americas;PAN;Panama;Restricted access to productive and financial resources;2019;16.1
+Americas;PAN;Panama;Restricted civil liberties;2019;17.8
+Asia;PNG;Papua New Guinea;Discrimination in the family;2019;54.2
+Americas;PRY;Paraguay;SIGI;2019;32.8
+Americas;PRY;Paraguay;Discrimination in the family;2019;46.1
+Americas;PRY;Paraguay;Restricted physical integrity;2019;22.1
+Americas;PRY;Paraguay;Restricted access to productive and financial resources;2019;31.7
+Americas;PRY;Paraguay;Restricted civil liberties;2019;29.8
+Americas;PER;Peru;SIGI;2019;24.5
+Americas;PER;Peru;Discrimination in the family;2019;47.7
+Americas;PER;Peru;Restricted physical integrity;2019;26.6
+Americas;PER;Peru;Restricted access to productive and financial resources;2019;5.5
+Americas;PER;Peru;Restricted civil liberties;2019;12.9
+Asia;PHL;Philippines;SIGI;2019;52.8
+Asia;PHL;Philippines;Discrimination in the family;2019;67.2
+Asia;PHL;Philippines;Restricted physical integrity;2019;25.7
+Asia;PHL;Philippines;Restricted access to productive and financial resources;2019;67.2
+Asia;PHL;Philippines;Restricted civil liberties;2019;45.1
+Europe;POL;Poland;SIGI;2019;17.4
+Europe;POL;Poland;Discrimination in the family;2019;21.9
+Europe;POL;Poland;Restricted physical integrity;2019;19.7
+Europe;POL;Poland;Restricted access to productive and financial resources;2019;15.3
+Europe;POL;Poland;Restricted civil liberties;2019;12.5
+Europe;PRT;Portugal;SIGI;2019;11.2
+Europe;PRT;Portugal;Discrimination in the family;2019;21.8
+Europe;PRT;Portugal;Restricted physical integrity;2019;7.4
+Europe;PRT;Portugal;Restricted access to productive and financial resources;2019;3.2
+Europe;PRT;Portugal;Restricted civil liberties;2019;11.4
+Asia;QAT;Qatar;Discrimination in the family;2019;92
+Europe;ROU;Romania;SIGI;2019;16.6
+Europe;ROU;Romania;Discrimination in the family;2019;28
+Europe;ROU;Romania;Restricted physical integrity;2019;7.7
+Europe;ROU;Romania;Restricted access to productive and financial resources;2019;7.1
+Europe;ROU;Romania;Restricted civil liberties;2019;22.1
+Europe;RUS;Russia;SIGI;2019;22.3
+Europe;RUS;Russia;Discrimination in the family;2019;22.6
+Europe;RUS;Russia;Restricted physical integrity;2019;19.1
+Europe;RUS;Russia;Restricted access to productive and financial resources;2019;15.1
+Europe;RUS;Russia;Restricted civil liberties;2019;31.5
+Africa;RWA;Rwanda;SIGI;2019;27.6
+Africa;RWA;Rwanda;Discrimination in the family;2019;38
+Africa;RWA;Rwanda;Restricted physical integrity;2019;21.4
+Africa;RWA;Rwanda;Restricted access to productive and financial resources;2019;26.5
+Africa;RWA;Rwanda;Restricted civil liberties;2019;23.5
+Asia;WSM;Samoa;Discrimination in the family;2019;42.5
+Asia;WSM;Samoa;Restricted physical integrity;2019;36.7
+Africa;STP;Sao Tome and Principe;Discrimination in the family;2019;16.4
+Africa;STP;Sao Tome and Principe;Restricted physical integrity;2019;13.8
+Asia;SAU;Saudi Arabia;Discrimination in the family;2019;89
+Asia;SAU;Saudi Arabia;Restricted access to productive and financial resources;2019;40.7
+Africa;SEN;Senegal;SIGI;2019;37
+Africa;SEN;Senegal;Discrimination in the family;2019;64.9
+Africa;SEN;Senegal;Restricted physical integrity;2019;41.9
+Africa;SEN;Senegal;Restricted access to productive and financial resources;2019;27.6
+Africa;SEN;Senegal;Restricted civil liberties;2019;3.6
+Europe;SRB;Serbia;SIGI;2019;19.8
+Europe;SRB;Serbia;Discrimination in the family;2019;32.9
+Europe;SRB;Serbia;Restricted physical integrity;2019;6.7
+Europe;SRB;Serbia;Restricted access to productive and financial resources;2019;19.8
+Europe;SRB;Serbia;Restricted civil liberties;2019;18
+Africa;SYC;Seychelles;Discrimination in the family;2019;40.7
+Africa;SLE;Sierra Leone;SIGI;2019;47.6
+Africa;SLE;Sierra Leone;Discrimination in the family;2019;53.7
+Africa;SLE;Sierra Leone;Restricted physical integrity;2019;50.4
+Africa;SLE;Sierra Leone;Restricted access to productive and financial resources;2019;44.8
+Africa;SLE;Sierra Leone;Restricted civil liberties;2019;40.9
+Asia;SGP;Singapore;SIGI;2019;27
+Asia;SGP;Singapore;Discrimination in the family;2019;27.4
+Asia;SGP;Singapore;Restricted physical integrity;2019;14.8
+Asia;SGP;Singapore;Restricted access to productive and financial resources;2019;11.9
+Asia;SGP;Singapore;Restricted civil liberties;2019;49.2
+Europe;SVK;Slovak Republic;SIGI;2019;16.5
+Europe;SVK;Slovak Republic;Discrimination in the family;2019;26.5
+Europe;SVK;Slovak Republic;Restricted physical integrity;2019;5.9
+Europe;SVK;Slovak Republic;Restricted access to productive and financial resources;2019;7.5
+Europe;SVK;Slovak Republic;Restricted civil liberties;2019;24.4
+Europe;SVN;Slovenia;SIGI;2019;12.9
+Europe;SVN;Slovenia;Discrimination in the family;2019;21.8
+Europe;SVN;Slovenia;Restricted physical integrity;2019;7.1
+Europe;SVN;Slovenia;Restricted access to productive and financial resources;2019;9
+Europe;SVN;Slovenia;Restricted civil liberties;2019;13.2
+Asia;SLB;Solomon Islands;Discrimination in the family;2019;51
+Asia;SLB;Solomon Islands;Restricted physical integrity;2019;37.3
+Africa;SOM;Somalia;Discrimination in the family;2019;76.2
+Africa;ZAF;South Africa;SIGI;2019;22.4
+Africa;ZAF;South Africa;Discrimination in the family;2019;33.2
+Africa;ZAF;South Africa;Restricted physical integrity;2019;15.1
+Africa;ZAF;South Africa;Restricted access to productive and financial resources;2019;19.6
+Africa;ZAF;South Africa;Restricted civil liberties;2019;21
+Africa;SSD;South Sudan ;Discrimination in the family;2019;60.5
+Africa;SSD;South Sudan ;Restricted civil liberties;2019;23.2
+Europe;ESP;Spain;SIGI;2019;14.3
+Europe;ESP;Spain;Discrimination in the family;2019;27.7
+Europe;ESP;Spain;Restricted physical integrity;2019;11.7
+Europe;ESP;Spain;Restricted access to productive and financial resources;2019;10.5
+Europe;ESP;Spain;Restricted civil liberties;2019;5.8
+Asia;LKA;Sri Lanka;SIGI;2019;43
+Asia;LKA;Sri Lanka;Discrimination in the family;2019;67.6
+Asia;LKA;Sri Lanka;Restricted physical integrity;2019;24.5
+Asia;LKA;Sri Lanka;Restricted access to productive and financial resources;2019;45.6
+Asia;LKA;Sri Lanka;Restricted civil liberties;2019;28.6
+Africa;SDN;Sudan;Discrimination in the family;2019;89.9
+Europe;SWE;Sweden;SIGI;2019;10.5
+Europe;SWE;Sweden;Discrimination in the family;2019;15.1
+Europe;SWE;Sweden;Restricted physical integrity;2019;8.1
+Europe;SWE;Sweden;Restricted access to productive and financial resources;2019;2.1
+Europe;SWE;Sweden;Restricted civil liberties;2019;16.2
+Europe;CHE;Switzerland;SIGI;2019;8.1
+Europe;CHE;Switzerland;Discrimination in the family;2019;0.1
+Europe;CHE;Switzerland;Restricted physical integrity;2019;13.3
+Europe;CHE;Switzerland;Restricted access to productive and financial resources;2019;11.9
+Europe;CHE;Switzerland;Restricted civil liberties;2019;6.5
+Asia;SYR;Syrian Arab Republic;Discrimination in the family;2019;86.1
+Asia;TJK;Tajikistan;SIGI;2019;32.4
+Asia;TJK;Tajikistan;Discrimination in the family;2019;47.8
+Asia;TJK;Tajikistan;Restricted physical integrity;2019;20.2
+Asia;TJK;Tajikistan;Restricted access to productive and financial resources;2019;34.1
+Asia;TJK;Tajikistan;Restricted civil liberties;2019;25.1
+Africa;TZA;Tanzania;SIGI;2019;46.1
+Africa;TZA;Tanzania;Discrimination in the family;2019;80.6
+Africa;TZA;Tanzania;Restricted physical integrity;2019;28.5
+Africa;TZA;Tanzania;Restricted access to productive and financial resources;2019;30
+Africa;TZA;Tanzania;Restricted civil liberties;2019;35.2
+Asia;THA;Thailand;SIGI;2019;35.5
+Asia;THA;Thailand;Discrimination in the family;2019;33.4
+Asia;THA;Thailand;Restricted physical integrity;2019;22.7
+Asia;THA;Thailand;Restricted access to productive and financial resources;2019;25.2
+Asia;THA;Thailand;Restricted civil liberties;2019;56.8
+Asia;TLS;Timor-Leste;Discrimination in the family;2019;31
+Asia;TLS;Timor-Leste;Restricted physical integrity;2019;34.4
+Africa;TGO;Togo;SIGI;2019;49.5
+Africa;TGO;Togo;Discrimination in the family;2019;63.1
+Africa;TGO;Togo;Restricted physical integrity;2019;24.7
+Africa;TGO;Togo;Restricted access to productive and financial resources;2019;43.5
+Africa;TGO;Togo;Restricted civil liberties;2019;62
+Americas;TTO;Trinidad and Tobago;SIGI;2019;23.5
+Americas;TTO;Trinidad and Tobago;Discrimination in the family;2019;18.3
+Americas;TTO;Trinidad and Tobago;Restricted physical integrity;2019;26.6
+Americas;TTO;Trinidad and Tobago;Restricted access to productive and financial resources;2019;20.4
+Americas;TTO;Trinidad and Tobago;Restricted civil liberties;2019;28.5
+Africa;TUN;Tunisia;SIGI;2019;47.6
+Africa;TUN;Tunisia;Discrimination in the family;2019;79.9
+Africa;TUN;Tunisia;Restricted physical integrity;2019;9.4
+Africa;TUN;Tunisia;Restricted access to productive and financial resources;2019;35
+Africa;TUN;Tunisia;Restricted civil liberties;2019;52.8
+Asia;TUR;Türkiye;SIGI;2019;25.1
+Asia;TUR;Türkiye;Discrimination in the family;2019;33.2
+Asia;TUR;Türkiye;Restricted physical integrity;2019;7.8
+Asia;TUR;Türkiye;Restricted access to productive and financial resources;2019;36.6
+Asia;TUR;Türkiye;Restricted civil liberties;2019;20
+Asia;TKM;Turkmenistan;Discrimination in the family;2019;29.8
+Africa;UGA;Uganda;SIGI;2019;45.1
+Africa;UGA;Uganda;Discrimination in the family;2019;54
+Africa;UGA;Uganda;Restricted physical integrity;2019;34.3
+Africa;UGA;Uganda;Restricted access to productive and financial resources;2019;61.4
+Africa;UGA;Uganda;Restricted civil liberties;2019;26.6
+Europe;UKR;Ukraine;SIGI;2019;21
+Europe;UKR;Ukraine;Discrimination in the family;2019;22.5
+Europe;UKR;Ukraine;Restricted physical integrity;2019;13.5
+Europe;UKR;Ukraine;Restricted access to productive and financial resources;2019;18.5
+Europe;UKR;Ukraine;Restricted civil liberties;2019;28.7
+Asia;ARE;United Arab Emirates;Discrimination in the family;2019;86.7
+Asia;ARE;United Arab Emirates;Restricted access to productive and financial resources;2019;28.5
+Europe;GBR;United Kingdom;SIGI;2019;17.5
+Europe;GBR;United Kingdom;Discrimination in the family;2019;27.6
+Europe;GBR;United Kingdom;Restricted physical integrity;2019;24.5
+Europe;GBR;United Kingdom;Restricted access to productive and financial resources;2019;9.5
+Europe;GBR;United Kingdom;Restricted civil liberties;2019;6.7
+Americas;USA;United States;SIGI;2019;17.9
+Americas;USA;United States;Discrimination in the family;2019;26.6
+Americas;USA;United States;Restricted physical integrity;2019;10.5
+Americas;USA;United States;Restricted access to productive and financial resources;2019;10.6
+Americas;USA;United States;Restricted civil liberties;2019;22.9
+Americas;URY;Uruguay;SIGI;2019;22.2
+Americas;URY;Uruguay;Discrimination in the family;2019;27.6
+Americas;URY;Uruguay;Restricted physical integrity;2019;11
+Americas;URY;Uruguay;Restricted access to productive and financial resources;2019;26.6
+Americas;URY;Uruguay;Restricted civil liberties;2019;22.8
+Asia;UZB;Uzbekistan;Discrimination in the family;2019;42.2
+Asia;UZB;Uzbekistan;Restricted civil liberties;2019;23.5
+Americas;VEN;Venezuela;Discrimination in the family;2019;43.5
+Americas;VEN;Venezuela;Restricted access to productive and financial resources;2019;12.7
+Americas;VEN;Venezuela;Restricted civil liberties;2019;14.6
+Asia;VNM;Viet Nam;SIGI;2019;25.3
+Asia;VNM;Viet Nam;Discrimination in the family;2019;23.3
+Asia;VNM;Viet Nam;Restricted physical integrity;2019;30.8
+Asia;VNM;Viet Nam;Restricted access to productive and financial resources;2019;32.3
+Asia;VNM;Viet Nam;Restricted civil liberties;2019;13.8
+Asia;YEM;Yemen;SIGI;2019;64
+Asia;YEM;Yemen;Discrimination in the family;2019;89.7
+Asia;YEM;Yemen;Restricted physical integrity;2019;37.7
+Asia;YEM;Yemen;Restricted access to productive and financial resources;2019;43.2
+Asia;YEM;Yemen;Restricted civil liberties;2019;75.8
+Africa;ZMB;Zambia;SIGI;2019;34.8
+Africa;ZMB;Zambia;Discrimination in the family;2019;40.7
+Africa;ZMB;Zambia;Restricted physical integrity;2019;27.6
+Africa;ZMB;Zambia;Restricted access to productive and financial resources;2019;28.2
+Africa;ZMB;Zambia;Restricted civil liberties;2019;41.8
+Africa;ZWE;Zimbabwe;SIGI;2019;32.4
+Africa;ZWE;Zimbabwe;Discrimination in the family;2019;42.8
+Africa;ZWE;Zimbabwe;Restricted physical integrity;2019;20.2
+Africa;ZWE;Zimbabwe;Restricted access to productive and financial resources;2019;34.3
+Africa;ZWE;Zimbabwe;Restricted civil liberties;2019;30.9
