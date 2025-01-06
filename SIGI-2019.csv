@@ -1,4 +1,4 @@
-Region;ID_Pays;Pays;Var_Sigi;Année;Valeur
+Region;ID_Pays;Pays;Var_Sigi;Annee;Valeur
 Asia;AFG;Afghanistan;SIGI;2019;52.8
 Asia;AFG;Afghanistan;Discrimination in the family;2019;81.3
 Asia;AFG;Afghanistan;Restricted physical integrity;2019;39.8
@@ -143,11 +143,11 @@ Americas;CRI;Costa Rica;Discrimination in the family;2019;45.7
 Americas;CRI;Costa Rica;Restricted physical integrity;2019;24.8
 Americas;CRI;Costa Rica;Restricted access to productive and financial resources;2019;27.5
 Americas;CRI;Costa Rica;Restricted civil liberties;2019;10.5
-Africa;CIV;Côte d'Ivoire;SIGI;2019;42.8
-Africa;CIV;Côte d'Ivoire;Discrimination in the family;2019;29.7
-Africa;CIV;Côte d'Ivoire;Restricted physical integrity;2019;35.6
-Africa;CIV;Côte d'Ivoire;Restricted access to productive and financial resources;2019;76.1
-Africa;CIV;Côte d'Ivoire;Restricted civil liberties;2019;20.4
+Africa;CIV;Cote d'Ivoire;SIGI;2019;42.8
+Africa;CIV;Cote d'Ivoire;Discrimination in the family;2019;29.7
+Africa;CIV;Cote d'Ivoire;Restricted physical integrity;2019;35.6
+Africa;CIV;Cote d'Ivoire;Restricted access to productive and financial resources;2019;76.1
+Africa;CIV;Cote d'Ivoire;Restricted civil liberties;2019;20.4
 Europe;HRV;Croatia;SIGI;2019;19.3
 Europe;HRV;Croatia;Discrimination in the family;2019;22
 Europe;HRV;Croatia;Restricted physical integrity;2019;7
@@ -646,11 +646,11 @@ Africa;TUN;Tunisia;Discrimination in the family;2019;79.9
 Africa;TUN;Tunisia;Restricted physical integrity;2019;9.4
 Africa;TUN;Tunisia;Restricted access to productive and financial resources;2019;35
 Africa;TUN;Tunisia;Restricted civil liberties;2019;52.8
-Asia;TUR;Türkiye;SIGI;2019;25.1
-Asia;TUR;Türkiye;Discrimination in the family;2019;33.2
-Asia;TUR;Türkiye;Restricted physical integrity;2019;7.8
-Asia;TUR;Türkiye;Restricted access to productive and financial resources;2019;36.6
-Asia;TUR;Türkiye;Restricted civil liberties;2019;20
+Asia;TUR;Turkiye;SIGI;2019;25.1
+Asia;TUR;Turkiye;Discrimination in the family;2019;33.2
+Asia;TUR;Turkiye;Restricted physical integrity;2019;7.8
+Asia;TUR;Turkiye;Restricted access to productive and financial resources;2019;36.6
+Asia;TUR;Turkiye;Restricted civil liberties;2019;20
 Asia;TKM;Turkmenistan;Discrimination in the family;2019;29.8
 Africa;UGA;Uganda;SIGI;2019;45.1
 Africa;UGA;Uganda;Discrimination in the family;2019;54

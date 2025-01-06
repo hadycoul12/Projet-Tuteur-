@@ -1,4 +1,4 @@
-Region;ID_Pays;Pays;Var_Sigi;Année;Valeur
+Region;ID_Pays;Pays;Var_Sigi;Annee;Valeur
 Africa;DZA;Algeria;Discrimination in the family;2023;79.9
 Africa;DZA;Algeria;Restricted access to productive and financial resources;2023;44.7
 Africa;DZA;Algeria;Restricted civil liberties;2023;60.2
@@ -52,11 +52,11 @@ Africa;COM;Comoros;Restricted civil liberties;2023;59.5
 Africa;COG;Congo;Discrimination in the family;2023;55
 Africa;COG;Congo;Restricted access to productive and financial resources;2023;57.9
 Africa;COG;Congo;Restricted civil liberties;2023;46.9
-Africa;CIV;Côte d'Ivoire;SIGI;2023;17.3
-Africa;CIV;Côte d'Ivoire;Discrimination in the family;2023;12.4
-Africa;CIV;Côte d'Ivoire;Restricted physical integrity;2023;28.6
-Africa;CIV;Côte d'Ivoire;Restricted access to productive and financial resources;2023;14.6
-Africa;CIV;Côte d'Ivoire;Restricted civil liberties;2023;12.7
+Africa;CIV;Cote d'Ivoire;SIGI;2023;17.3
+Africa;CIV;Cote d'Ivoire;Discrimination in the family;2023;12.4
+Africa;CIV;Cote d'Ivoire;Restricted physical integrity;2023;28.6
+Africa;CIV;Cote d'Ivoire;Restricted access to productive and financial resources;2023;14.6
+Africa;CIV;Cote d'Ivoire;Restricted civil liberties;2023;12.7
 Africa;COD;Democratic Republic of the Congo;SIGI;2023;46.9
 Africa;COD;Democratic Republic of the Congo;Discrimination in the family;2023;52.5
 Africa;COD;Democratic Republic of the Congo;Restricted physical integrity;2023;32.3
@@ -399,11 +399,11 @@ Asia;NZL;New Zealand;Discrimination in the family;2023;7.9
 Asia;NZL;New Zealand;Restricted physical integrity;2023;10.2
 Asia;NZL;New Zealand;Restricted access to productive and financial resources;2023;20.3
 Asia;NZL;New Zealand;Restricted civil liberties;2023;16.9
-Asia;TUR;Türkiye;SIGI;2023;24
-Asia;TUR;Türkiye;Discrimination in the family;2023;31.2
-Asia;TUR;Türkiye;Restricted physical integrity;2023;13
-Asia;TUR;Türkiye;Restricted access to productive and financial resources;2023;29.8
-Asia;TUR;Türkiye;Restricted civil liberties;2023;21.1
+Asia;TUR;Turkiye;SIGI;2023;24
+Asia;TUR;Turkiye;Discrimination in the family;2023;31.2
+Asia;TUR;Turkiye;Restricted physical integrity;2023;13
+Asia;TUR;Turkiye;Restricted access to productive and financial resources;2023;29.8
+Asia;TUR;Turkiye;Restricted civil liberties;2023;21.1
 Asia;ARM;Armenia;SIGI;2023;23.7
 Asia;ARM;Armenia;Discrimination in the family;2023;26.3
 Asia;ARM;Armenia;Restricted physical integrity;2023;27.7
