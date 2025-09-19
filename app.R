@@ -32,7 +32,7 @@ ui <- dashboardPage(
     tabItems(
       tabItem(tabName = "home",
               h2("Bienvenue sur Mon plateforme d'analyse de la discrimination de genre dans le monde"),
-              h3("Auteur: Hady COULIBALY - Data Scientist"),
+              h3("Auteur: Hady COULIBALY - Chef de Projet Data & IA"),
               tags$div(
                 tags$img(src = "photo.jpg", 
                          alt = "Image SIGI", 
